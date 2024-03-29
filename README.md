@@ -11,7 +11,7 @@ The main problem is that the braking parts (when delta speed is below 2) of the 
 
 ### Improvements
 
-I spent around three hours on this, as was suggested in the document, but if I had more time I would:
+I spent around three hours on this, as was suggested in the document, but if I was allowed more time I would:
 
 1. **Create a lap identifier** by looking at the track and then matching up its turns to left and right braking data, as the left tyre heats more when making a right turn and vice versa so I could probably identify a lap by looking at a given pattern of left and right turns repeating. I tried using peak detection, clustering and a Fourier transform to identify repeating patterns but it was inconclusive.
 
