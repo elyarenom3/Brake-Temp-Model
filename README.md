@@ -1,4 +1,4 @@
-## Overview + Idea Behind Model
+## Overview + Idea Behind Model 
 
 This repo contains Python code to predict left and right brake temps in a F1 car, using data from six races. I decided to use an ML gradient boosting machine model because in the context of F1 where you constantly have new race data, it can easily be added to the model periodically, improving accuracy over time, plus gradient boosting machines are great for predicting complex, non-linear relationships between features and target variables. I decided to go with XGBoost, mainly because it includes L1 and L2 regularization, which helps prevent the model from overfitting.
 
@@ -11,7 +11,7 @@ The main problem is that the braking parts (when delta speed is below 2) of the 
 
 ### Improvements
 
-Given more time, I would:
+I spent around three hours on this, as was suggested in the document, but if I had more time I would:
 
 1. **Create a lap identifier** by looking at the track and then matching up its turns to left and right braking data, as the left tyre heats more when making a right turn and vice versa so I could probably identify a lap by looking at a given pattern of left and right turns repeating. I tried using peak detection, clustering and a Fourier transform to identify repeating patterns but it was inconclusive.
 
