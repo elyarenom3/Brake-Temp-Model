@@ -1,6 +1,6 @@
 ## Overview + Idea Behind Model 
 
-This repo contains Python code to predict left and right brake temps in a F1 car, using data from six races. I decided to use an ML gradient boosting machine model because in the context of F1 where you constantly have new race data, it can easily be added to the model periodically, improving accuracy over time, plus gradient boosting machines are great for predicting complex, non-linear relationships between features and target variables. I decided to go with XGBoost, mainly because it includes L1 and L2 regularization, which helps prevent the model from overfitting.
+This repo contains Python code to predict left and right brake temps in a F1 car, using data from six races. I really really enjoyed building this and I would really love some feedback on how I can improve :) . I decided to use an ML gradient boosting machine model because in the context of F1 where you constantly have new race data, it can easily be added to the model periodically, improving accuracy over time, plus gradient boosting machines are great for predicting complex, non-linear relationships between features and target variables. I decided to go with XGBoost, mainly because it includes L1 and L2 regularization, which helps prevent the model from overfitting.
 
 Before creating my model, I did some correlation and regression testing to confirm some physics/common-sense based theories I had about how the channels would interact (eg. I made an acceleration feauture because when the car accelerates theres more air going into the ducts so the brakes cool down faster). I realised that only taking the negative parts of my acceleration to model braking periods was not enough, because the car still decelerates when you lift the throttle without even touching the brake, so I ran some tests to see at what threshold a negative delta speed corresponds to actual braking and found -2.
 
@@ -37,3 +37,6 @@ With more time, I would do a deeper dive on performance metrics (e.g., RMSE, MAE
 * Most Important Feature for Model L Greater Than or Equal to 2: vCar with an importance of 0.5056588
 * Most Important Feature for Model R Less Than -2: deltaSpeed with an importance of 0.9942036
 * Most Important Feature for Model L Less Than -2: deltaSpeed with an importance of 0.9936026
+
+tiny note: I’m assuming that the few negative values for speed, because they’re so small, are a result of how the sensor or the data logging system handles errors or underflows. To address this, if given more time, I would do more thorough preprocessing + cleaning of the data and potentially consult documentation for the data logging system to 
+understand how an anomaly might occur.
