@@ -30,12 +30,10 @@ df = df[df['deltaSpeed'] < -2]
 # change this to < -2 and > -2 to show how it impacts the data
 
 print(df.describe())
-
-# Select only numeric columns for correlation calculation
 numeric_df = df.select_dtypes(include=[np.number])
 
 plt.figure(figsize=(10, 8))
-corr = numeric_df.corr()  # Calculate correlation on numeric columns only
+corr = numeric_df.corr() 
 sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f")
 plt.title('Correlation Matrix')
 plt.show()

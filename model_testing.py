@@ -2,17 +2,16 @@ import pandas as pd
 import h5py
 from joblib import load
 from sklearn.metrics import mean_squared_error
-'''
-This file is for the purposes of testing my model.
-'''
+
 
 new_file_path = "/Path/to/new/unseen/data"  # Replace with the actual file path
+
 # Load the trained models
 model_R_less = load('model_less_than_minus_2_deltaTBrakeR_model.joblib')
 model_L_less = load('model_less_than_minus_2_deltaTBrakeL_model.joblib')
 model_R_greater = load('model_greater_than_or_equal_2_deltaTBrakeR_model.joblib')
 model_L_greater = load('model_greater_than_or_equal_2_deltaTBrakeL_model.joblib')
-# Function to preprocess new data similar to the training data
+
 
 
 def preprocess_new_data(file_path):
@@ -28,13 +27,11 @@ new_data = preprocess_new_data(new_file_path)
 
 
 def preprocess_and_predict(new_data, models, initial_brake_temps):
-    # Unpack the models for clarity
     model_R_greater = models['model_greater_than_or_equal_2_deltaTBrakeR']
     model_L_greater = models['model_greater_than_or_equal_2_deltaTBrakeL']
     model_R_less = models['model_less_than_minus_2_deltaTBrakeR']
     model_L_less = models['model_less_than_minus_2_deltaTBrakeL']
 
-    # Initialize lists to store brake temperature predictions
     predicted_TBrakeR = [initial_brake_temps['TBrakeR']]
     predicted_TBrakeL = [initial_brake_temps['TBrakeL']]
 
@@ -49,11 +46,11 @@ def preprocess_and_predict(new_data, models, initial_brake_temps):
             delta_R = model_R_less.predict(current_features)[0]
             delta_L = model_L_less.predict(current_features)[0]
 
-        # Add the predicted delta to the last known brake temperature and append to the list
+        # Add predicted delta to the last known temp and append to list
         predicted_TBrakeR.append(predicted_TBrakeR[-1] + delta_R)
         predicted_TBrakeL.append(predicted_TBrakeL[-1] + delta_L)
 
-    # Convert the lists of predictions into Pandas Series for easier handling
+    # Convert lists into Series for easier handling
     predicted_TBrakeR_series = pd.Series(predicted_TBrakeR, name='Predicted_TBrakeR')
     predicted_TBrakeL_series = pd.Series(predicted_TBrakeL, name='Predicted_TBrakeL')
 
