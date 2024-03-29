@@ -66,3 +66,5 @@ def evaluate_model(actual_temps, predicted_temps):
     print(f'MSE for Right Brake Temperature: {mse_r}')
     print(f'MSE for Left Brake Temperature: {mse_l}')
 
+
+
