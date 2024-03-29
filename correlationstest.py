@@ -23,19 +23,14 @@ def load_race_data(base_directory, race_names):
 race_names = ['Austria', 'Bahrain', 'Hungary', 'Portugal', 'Spain', 'Turkey']
 df = load_race_data(base_dir, race_names)
 
-# df.drop(columns=["TTrack", "TAir"], inplace=True)
-
-# Calculate deltas and averages
-
-# df['deceleration'] = np.where(df['deltaSpeed'] < 0, df['deltaSpeed'], np.nan)
 df['deltaTBrakeL'] = df['TBrakeL'].diff()
 df['deltaTBrakeR'] = df['TBrakeR'].diff()
 df['deltaSpeed'] = df['vCar'].diff()
 df = df[df['deltaSpeed'] < -2]
+# change this to < -2 and > -2 to show how it impacts the data
+
 print(df.describe())
 
-# Clean up the DataFrame by dropping the individual brake temperature columns
-# df.drop(columns=["deltaTBrakeR", "deltaTBrakeL", "TBrakeR", "TBrakeL"], inplace=True)
 # Select only numeric columns for correlation calculation
 numeric_df = df.select_dtypes(include=[np.number])
 
