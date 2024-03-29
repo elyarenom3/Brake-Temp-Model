@@ -7,7 +7,7 @@ from xgboost import XGBRegressor
 from sklearn.metrics import mean_squared_error, r2_score
 from joblib import dump
 
-base_dir = "/Users/adminelya/Desktop/mclaren_data/Brake_model/data"
+base_dir = "/Users/adminelya/Desktop/Mclaren/data"
 
 
 def load_race_data(base_directory, race_names):
@@ -54,11 +54,11 @@ df = load_race_data(base_dir, race_names)
 df = preprocess_data(df)
 
 param_grid = {
-    'n_estimators': [100, 300],
-    'learning_rate': [0.01, 0.1],
-    'max_depth': [3, 7],
-    'subsample': [0.8, 1.0],
-    'colsample_bytree': [0.8, 1.0]
+    'n_estimators': [100, 200, 300],
+    'learning_rate': [0.01, 0.05, 0.1],
+    'max_depth': [3, 5, 7],
+    'subsample': [0.8, 0.9, 1.0],
+    'colsample_bytree': [0.8, 0.9, 1.0]
 }
 cv_splits = 5
 
