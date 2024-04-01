@@ -5,9 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ac99867-fd19-4e83-8995-d137e100d469" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/feature_importance_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/less_than_or_equal_to_minus_2_deltaTBrakeL_model.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/less_than_or_equal_to_minus_2_deltaTBrakeR_model.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_test_bahrain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_test_new.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/more_than_minus_2_deltaTBrakeL_model.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/more_than_minus_2_deltaTBrakeR_model.joblib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mse_plot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_testing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/correlations_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/correlations_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_importance_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_importance_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/greater_than_or_equal_2_deltaTBrakeL_model.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/greater_than_or_equal_2_deltaTBrakeR_model.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/less_than_minus_2_deltaTBrakeL_model.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/less_than_minus_2_deltaTBrakeR_model.joblib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model_testing.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/model_training.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_training.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +38,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -39,8 +55,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.correlations_test.executor": "Run",
     "Python.correlationstest.executor": "Run",
+    "Python.example_test.executor": "Run",
     "Python.feature_importance_test.executor": "Run",
+    "Python.model_test_bahrain.executor": "Run",
     "Python.model_training.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -69,7 +88,7 @@
       <option name="presentableId" value="Default" />
       <updated>1711685233336</updated>
       <workItem from="1711685234853" duration="2530000" />
-      <workItem from="1711689109264" duration="4258000" />
+      <workItem from="1711689109264" duration="36028000" />
     </task>
     <servers />
   </component>
@@ -80,8 +99,11 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mclaren$model_training.coverage" NAME="model_training Coverage Results" MODIFIED="1711690007786" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mclaren$correlations_test.coverage" NAME="correlations_test Coverage Results" MODIFIED="1711928996074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mclaren$example_test.coverage" NAME="example_test Coverage Results" MODIFIED="1711903888072" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mclaren$model_training.coverage" NAME="model_training Coverage Results" MODIFIED="1711923406877" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mclaren$model_test_bahrain.coverage" NAME="model_test_bahrain Coverage Results" MODIFIED="1711929517071" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Mclaren$correlationstest.coverage" NAME="correlationstest Coverage Results" MODIFIED="1711686164843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Mclaren$feature_importance_test.coverage" NAME="feature_importance_test Coverage Results" MODIFIED="1711694341003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Mclaren$feature_importance_test.coverage" NAME="feature_importance_test Coverage Results" MODIFIED="1711926274614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

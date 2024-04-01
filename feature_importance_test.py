@@ -20,13 +20,13 @@ def plot_feature_importance(model_path, feature_names, model_name):
     plt.show()
 
 
-feature_names = ['vCar', 'TAir', 'TTrack','deltaSpeed']
+feature_names = ['vCar', 'TAir', 'TTrack', 'deltaSpeed']
 
 model_paths = {
-    'Model R Greater Than or Equal to 2': 'greater_than_or_equal_2_deltaTBrakeR_model.joblib',
-    'Model L Greater Than or Equal to 2': 'greater_than_or_equal_2_deltaTBrakeL_model.joblib',
-    'Model R Less Than -2': 'less_than_minus_2_deltaTBrakeR_model.joblib',
-    'Model L Less Than -2': 'less_than_minus_2_deltaTBrakeL_model.joblib'
+    'Model R Greater Than -2': 'more_than_minus_2_deltaTBrakeR_model.joblib',
+    'Model L Greater Than -2': 'more_than_minus_2_deltaTBrakeL_model.joblib',
+    'Model R Less Than or Equal to -2': 'less_than_or_equal_to_minus_2_deltaTBrakeR_model.joblib',
+    'Model L Less Than or Equal to -2': 'less_than_or_equal_to_minus_2_deltaTBrakeL_model.joblib'
 }
 
 for model_name, model_path in model_paths.items():

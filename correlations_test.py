@@ -33,7 +33,7 @@ print(df.describe())
 numeric_df = df.select_dtypes(include=[np.number])
 
 plt.figure(figsize=(10, 8))
-corr = numeric_df.corr() 
+corr = numeric_df.corr()
 sns.heatmap(corr, annot=True, cmap='coolwarm', fmt=".2f")
 plt.title('Correlation Matrix')
 plt.show()
